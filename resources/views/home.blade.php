@@ -20,9 +20,9 @@
                 @if($user->plansubs()['plan'])
                     @if( $user_current_pph > $user->plansubs()['plan']->ppm)
                         <!--
-    				<div class="alert alert-danger text-center" role="alert"> 
+    				<div class="alert alert-danger text-center" role="alert">
     					Whoops! You've reached your monthly limit of {{$user->plansubs()['plan']->ppm}} which is the number of posts you can send to Buffer. <b>Need to send more?</b> <a href="/settings">Visit your settings page to upgrade your account</a>.
-    					</div> 
+    					</div>
     				-->
                     @endif
                 @endif

@@ -19,9 +19,9 @@
                 <?php if($user->plansubs()['plan']): ?>
                     <?php if( $user_current_pph > $user->plansubs()['plan']->ppm): ?>
                         <!--
-    				<div class="alert alert-danger text-center" role="alert"> 
+    				<div class="alert alert-danger text-center" role="alert">
     					Whoops! You've reached your monthly limit of <?php echo e($user->plansubs()['plan']->ppm); ?> which is the number of posts you can send to Buffer. <b>Need to send more?</b> <a href="/settings">Visit your settings page to upgrade your account</a>.
-    					</div> 
+    					</div>
     				-->
                     <?php endif; ?>
                 <?php endif; ?>
@@ -249,4 +249,5 @@
         <?php endif; ?>
     </div>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
